@@ -1,5 +1,5 @@
 import { getCityBounds } from "@/utils/getCityBounds";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import Map, { AttributionControl, MapRef, Marker } from "react-map-gl/mapbox";
 import { MapMouseEvent } from "mapbox-gl";
 

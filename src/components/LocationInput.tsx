@@ -12,7 +12,7 @@ const countryMap: Record<string, string> = {};
 
 let countries = rawCountries
   .map((c) => {
-    let displayName = c.name;
+    const displayName = c.name;
 
     if (displayName === "Israel") return null;
 
