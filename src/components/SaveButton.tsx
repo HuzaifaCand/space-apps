@@ -22,9 +22,9 @@ export default function SaveButton({
   ${
     selectedCity
       ? justSaved
-        ? "bg-blue-700 animate-pulse text-white"
-        : "bg-blue-700 text-white"
-      : "bg-blue-900/80 text-white/80 cursor-not-allowed"
+        ? "bg-blue-900 animate-pulse text-white"
+        : "bg-blue-900 text-white"
+      : "bg-blue-900/20 text-white/80 cursor-not-allowed"
   }`}
     >
       {selectedCity ? (justSaved ? "Selecting" : "Selected") : "Select"}
