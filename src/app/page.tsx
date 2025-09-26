@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <Stars />
-      <div className="max-w-6xl flex flex-col md:flex-row gap-8 md:items-stretch  justify-center mx-auto py-24 px-4">
+      <div className="max-w-6xl flex flex-col md:flex-row gap-8 md:items-stretch  justify-center mx-auto py-12 md:py-24 px-4">
         <div className="md:w-1/3 w-full">
           <div className="bg-background/80 ring-1 ring-blueBg text-white shadow-xl rounded-2xl h-full px-10 py-14">
             <LocationInput
