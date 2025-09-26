@@ -1,42 +1,61 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tailwindcss";
+@import "mapbox-gl/dist/mapbox-gl.css";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
 body {
-  max-width: 100vw;
+  margin: 0;
+  height: 100vh;
+  background: black;
   overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.stars {
+  width: 100%;
+  min-height: 100%;
+  background: radial-gradient(circle at center, #000010 0%, #000 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.7;
+  filter: drop-shadow(0 0 2px white); /* glow effect */
+  animation: twinkle infinite alternate;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@keyframes twinkle {
+  from {
+    opacity: 0.2;
+    transform: scale(0.9);
   }
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@theme {
+  --color-secondary: #172030;
+  --color-background: #0b1018;
+  --color-muted: #5f738e;
+  --color-highlight: #a5d1ff;
+  --color-blueBg: #1a2135;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(18, 38, 40, 1);
+  border-radius: 10px;
 }

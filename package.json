@@ -3,23 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack -p 5000",
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "country-state-city": "^3.2.1",
+    "framer-motion": "^12.23.21",
+    "mapbox-gl": "^3.15.0",
+    "next": "15.5.3",
+    "postcss": "^8.5.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.3"
+    "react-globe.gl": "^2.36.0",
+    "react-map-gl": "^8.0.4",
+    "tailwindcss": "^4.1.13",
+    "three": "^0.180.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }
