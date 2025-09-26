@@ -57,7 +57,12 @@ export default function Globe({
         initialViewState={{ zoom: 0 }}
         mapStyle="mapbox://styles/mapbox/standard"
         projection="globe"
-        style={{ width: "100%", height: "100%", borderRadius: "0.5rem" }}
+        style={{
+          width: "100%",
+          height: "100%",
+          borderRadius: "0.5rem",
+          background: "none",
+        }}
         onClick={(event) => {
           if (onMark) {
             onMark(event);
