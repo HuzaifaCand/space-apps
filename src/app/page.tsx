@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <main>
       <Stars />
-      <div className="max-w-6xl flex flex-col md:flex-row gap-8 md:items-stretch  justify-center mx-auto py-12 md:py-24 px-4">
+      <div className="max-w-6xl flex flex-col md:flex-row gap-8 md:items-stretch  justify-center mx-auto py-12 md:py-24 px-8">
         <div className="md:w-1/3 w-full">
-          <div className="bg-background/80 ring-1 ring-blueBg text-white shadow-xl rounded-2xl h-full px-10 py-14">
+          <div className="bg-background/80 ring-1 ring-blueBg text-white shadow-xl rounded-2xl h-full py-12 px-10 sm:py-14">
             <LocationInput
               selectedCity={selectedCity}
               setSelectedCity={setSelectedCity}
@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
         <div className="md:w-2/3 w-full">
-          <div className="bg-background/80 ring-1 ring-blueBg text-white shadow-xl w-full rounded-xl h-full flex flex-col gap-4 px-10 md:py-10 pb-16 pt-12">
+          <div className="bg-background/80 ring-1 ring-blueBg text-white shadow-xl w-full rounded-xl h-full flex flex-col gap-4 px-10 sm:px-10 md:py-10 pb-16 pt-12">
             <h2 className="text-lg font-semibold text-white">
               Pin the exact location
             </h2>
