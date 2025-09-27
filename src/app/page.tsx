@@ -29,8 +29,8 @@ export default function Home() {
         </div>
         <div className="md:w-2/3 w-full">
           <div className="bg-background/80 ring-1 ring-blueBg text-white shadow-xl w-full rounded-xl h-full flex flex-col gap-4 px-10 sm:px-10 md:py-10 pb-16 pt-12">
-            <h2 className="text-lg font-semibold text-white">
-              Where are you going?
+            <h2 className="text-lg font-semibold text-highlight">
+              Select a location
             </h2>
 
             <div className="w-full p-4 h-60 bg-background border rounded-xl border-blueBg">

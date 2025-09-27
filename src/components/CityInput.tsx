@@ -68,7 +68,10 @@ export default function CityInput({
         <div className="relative">
           <input
             required
-            onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
+            onBlur={() => {
+              setTimeout(() => setShowDropdown(false), 200);
+              if (cities.includes(city)) setSelectedCity(city);
+            }}
             onFocus={() => setShowDropdown(true)}
             type="text"
             value={city}

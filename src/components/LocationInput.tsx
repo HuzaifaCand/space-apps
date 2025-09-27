@@ -52,7 +52,7 @@ export default function LocationInput({
 
   return (
     <div>
-      <h2 className="text-lg font-semibold text-white mb-4">
+      <h2 className="text-lg font-semibold text-highlight mb-4">
         Enter a country and city
       </h2>
 

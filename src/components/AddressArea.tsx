@@ -40,7 +40,7 @@ export default function AddressCard({ selectedPoint }: AddressCardProps) {
   }, [selectedPoint]);
 
   return (
-    <div className="mt-4 p-4 bg-background ring ring-blueBg  rounded-lg">
+    <div className="mt-4 p-4 bg-background ring ring-blueBg  rounded-sm">
       <h3 className="font-medium text-sm text-lessWhite mb-1">
         Selected Location
       </h3>

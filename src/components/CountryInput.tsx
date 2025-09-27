@@ -46,7 +46,7 @@ export default function CountryInput({
 
   return (
     <div className="flex flex-col flex-1">
-      <label className="block text-xs font-light text-moreWhite mb-1">
+      <label className="block text-xs font-light text-lessWhite mb-1">
         Country
       </label>
 
