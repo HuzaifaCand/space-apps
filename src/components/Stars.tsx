@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-const NUM_STARS = 500;
+const NUM_STARS = 1000;
 
 export default function Stars() {
   useEffect(() => {

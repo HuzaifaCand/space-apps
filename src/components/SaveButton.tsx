@@ -18,7 +18,7 @@ export default function SaveButton({
   return (
     <button
       disabled={!selectedCity}
-      className={`mt-4 px-4 py-2 text-xs font-medium rounded-sm shadow-md transition-colors duration-300
+      className={`mt-2 px-4 py-2 text-xs font-medium rounded-sm shadow-md transition-colors duration-300
   ${
     selectedCity
       ? justSaved

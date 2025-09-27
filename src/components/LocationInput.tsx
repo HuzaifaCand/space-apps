@@ -5,6 +5,8 @@ import CountryInput from "./CountryInput";
 import { City, Country } from "country-state-city";
 import CityInput from "./CityInput";
 import SaveButton from "./SaveButton";
+import AddressCard from "./AddressArea";
+import { SelPoint } from "@/app/page";
 
 const rawCountries = Country.getAllCountries();
 
@@ -30,11 +32,13 @@ let countries = rawCountries
 countries = countries.filter(Boolean) as string[];
 
 interface Props {
+  selectedPoint: SelPoint;
   selectedCity: string | null;
   setSelectedCity: (s: string | null) => void;
 }
 
 export default function LocationInput({
+  selectedPoint,
   selectedCity,
   setSelectedCity,
 }: Props) {
@@ -75,6 +79,8 @@ export default function LocationInput({
         {/* Save Button */}
 
         <SaveButton selectedCity={selectedCity} />
+
+        <AddressCard selectedPoint={selectedPoint} />
       </div>
     </div>
   );
